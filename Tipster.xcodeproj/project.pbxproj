@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		43CCA8AA4EEC030ECA23D272 /* Pods_Tipster_TipsterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F256B32FC8C0D02B276F69ED /* Pods_Tipster_TipsterUITests.framework */; };
 		81DB23716E248E4FCBDB5F0D /* Pods_TipsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3229D180FD529FACD216CDE /* Pods_TipsterTests.framework */; };
+		9005931F28D92F68002C3CD0 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005931E28D92F68002C3CD0 /* MovieDetailsViewController.swift */; };
+		902054B028DA4386000D3EFE /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902054AF28DA4386000D3EFE /* MovieGridViewController.swift */; };
+		902054B228DA483E000D3EFE /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902054B128DA483E000D3EFE /* MovieGridCell.swift */; };
 		907F61F428D2641F00ECF15D /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907F61F328D2641F00ECF15D /* MovieCell.swift */; };
 		907F61F728D2747000ECF15D /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 907F61F628D2747000ECF15D /* AlamofireImage */; };
 		90D14D5C28D10C4C00784F48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D14D5B28D10C4C00784F48 /* AppDelegate.swift */; };
@@ -46,6 +49,9 @@
 		5C87466299E340D94881C25A /* Pods-Tipster-TipsterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tipster-TipsterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tipster-TipsterUITests/Pods-Tipster-TipsterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DA9E8D7E7717130F37F33B5 /* Pods_Tipster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tipster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A2C10BFD8FE30E246B64E3 /* Pods-TipsterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TipsterTests.release.xcconfig"; path = "Target Support Files/Pods-TipsterTests/Pods-TipsterTests.release.xcconfig"; sourceTree = "<group>"; };
+		9005931E28D92F68002C3CD0 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		902054AF28DA4386000D3EFE /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		902054B128DA483E000D3EFE /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 		907F61F328D2641F00ECF15D /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		90D14D5828D10C4C00784F48 /* Tipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D14D5B28D10C4C00784F48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,7 +111,6 @@
 				B379923CD56FF02B6A141FC4 /* Pods-TipsterTests.debug.xcconfig */,
 				85A2C10BFD8FE30E246B64E3 /* Pods-TipsterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,11 +149,14 @@
 		90D14D5A28D10C4C00784F48 /* Tipster */ = {
 			isa = PBXGroup;
 			children = (
+				90D14D6128D10C4C00784F48 /* Main.storyboard */,
 				90D14D5B28D10C4C00784F48 /* AppDelegate.swift */,
 				90D14D5D28D10C4C00784F48 /* SceneDelegate.swift */,
 				907F61F328D2641F00ECF15D /* MovieCell.swift */,
-				90D14D6128D10C4C00784F48 /* Main.storyboard */,
 				90D14D5F28D10C4C00784F48 /* ViewController.swift */,
+				9005931E28D92F68002C3CD0 /* MovieDetailsViewController.swift */,
+				902054AF28DA4386000D3EFE /* MovieGridViewController.swift */,
+				902054B128DA483E000D3EFE /* MovieGridCell.swift */,
 				90D14D6428D10C4C00784F48 /* Assets.xcassets */,
 				90D14D6628D10C4C00784F48 /* LaunchScreen.storyboard */,
 				90D14D6928D10C4C00784F48 /* Info.plist */,
@@ -418,10 +426,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9005931F28D92F68002C3CD0 /* MovieDetailsViewController.swift in Sources */,
 				90D14D6028D10C4C00784F48 /* ViewController.swift in Sources */,
 				90D14D5C28D10C4C00784F48 /* AppDelegate.swift in Sources */,
 				907F61F428D2641F00ECF15D /* MovieCell.swift in Sources */,
 				90D14D5E28D10C4C00784F48 /* SceneDelegate.swift in Sources */,
+				902054B028DA4386000D3EFE /* MovieGridViewController.swift in Sources */,
+				902054B228DA483E000D3EFE /* MovieGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
